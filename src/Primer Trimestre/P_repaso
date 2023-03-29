@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class P_repaso{
+	public static void main (String[]args){
+		Scanner sc = new Scanner(System.in);
+		
+		int anno;
+		
+		System.out.println("Dime un año");
+		anno= sc.nextInt();
+		
+		if(anno%4==0||anno%100!=0&&anno%400==0){
+			System.out.println("es bisiesto");
+		}else
+			System.out.println("No lo es");
+	}
+}
